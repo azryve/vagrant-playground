@@ -1,0 +1,31 @@
+version: '2'
+services:
+  h02d01:
+    image: phusion/baseimage:latest
+  h02d02:
+    image: phusion/baseimage:latest
+  h02d03:
+    image: phusion/baseimage:latest
+  h02d04:
+    image: phusion/baseimage:latest
+  h02d05:
+    image: phusion/baseimage:latest
+  h02d06:
+    image: phusion/baseimage:latest
+  h02d07:
+    image: phusion/baseimage:latest
+  h02d07:
+    image: phusion/baseimage:latest
+  h02d08:
+    image: phusion/baseimage:latest
+  h02d09:
+    image: phusion/baseimage:latest
+  h02d10:
+    image: phusion/baseimage:latest
+
+networks:
+  default:
+    driver: bridge
+    driver_opts:
+       com.docker.network.enable_ipv6: "true"
+       com.docker.network.bridge.name: "comp-br0"

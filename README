@@ -1,0 +1,16 @@
+Little vagrant(libvirt)/docker playground
+First install vagrant with something like 
+
+curl -O 'https://releases.hashicorp.com/vagrant/1.8.4/vagrant_1.8.4_x86_64.deb'
+sudo dpkg -i vagrant_1.8.4_x86_64.deb
+sudo apt-get install qemu-kvm libvirt0 libvirt-bin ruby-libvirt libguestfs-tools
+sudo apt-get install libxslt-dev libxml2-dev libvirt-dev zlib1g-dev ruby-dev
+vagrant plugin install vagrant-libvirt
+vagrant plugin install vagrant-mutate
+vagrant plugin install vagrant-dnsmasq
+vagrant box add ubuntu/trusty64
+vagrant mutate ubuntu/trusty64 libvirt
+
+then 
+
+vagrant up
